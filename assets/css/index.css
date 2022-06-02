@@ -1,0 +1,95 @@
+@import "normalize.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --primary-color: #ffce40;
+  --primary-color1: #f2a520;
+  --primary-color2: #fbc028;
+  --black-color: #1b1c1f;
+  --white-color: #fff;
+  --title-section-color: #2a3342;
+  --text-desc-color: rgba(27, 28, 31, 0.75);
+  --text-desc-color1: #5f5e5c;
+  --text-desc-color2: #556987;
+  --text-button-color: #f0fdf4;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1153px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  color: var(--title-section-color);
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 122%;
+  max-width: 846px;
+}
+
+.section-desc {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 120%;
+  max-width: 1001px;
+}
+
+.content-title {
+  color: var(--black-color);
+  font-family: "Lato";
+  font-weight: 700;
+}
+
+.content-desc {
+  color: var(--text-desc-color);
+}
+
+.primary-btn {
+  background: var(--black-color);
+  border-radius: 10px;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 112%;
+  color: var(--white-color);
+}
+
+/*# sourceMappingURL=index.css.map */

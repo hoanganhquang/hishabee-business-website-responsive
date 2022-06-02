@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "sass --watch ./assets/scss/index.scss ./assets/css/index.css"
+  },
+  "devDependencies": {
+    "sass": "^1.52.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
