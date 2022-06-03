@@ -1,0 +1,135 @@
+header {
+  --navbar-height: 118px;
+
+  background-image: url("/assets/icons/hero-bg.svg");
+  padding-top: 202px;
+  padding-bottom: 108px;
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--white-color);
+
+    .navbar-container {
+      height: var(--navbar-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .features {
+        display: flex;
+        align-items: center;
+        gap: 0 37.04px;
+
+        .nav {
+          display: flex;
+          gap: 0 30px;
+
+          .item {
+            a {
+              font-family: "DM Sans";
+              font-weight: 400;
+              font-size: 1.8rem;
+              line-height: 111%;
+              color: var(--black-color);
+              cursor: pointer;
+            }
+
+            &.active {
+              a {
+                color: var(--primary-color);
+                font-weight: 700;
+              }
+            }
+          }
+        }
+
+        .action {
+          display: flex;
+          gap: 0 16px;
+
+          .languages {
+            display: flex;
+            align-items: center;
+            border: 1px solid #eff0f7;
+            box-shadow: 0px 5px 5px rgba(8, 15, 52, 0.04);
+            border-radius: 10px;
+            width: 162px;
+            height: 54px;
+            padding: 9px 16px 9px 9px;
+
+            .name {
+              font-family: "Lato";
+              font-weight: 500;
+              font-size: 1.8rem;
+              line-height: 111%;
+              color: var(--black-color);
+              margin-right: 28px;
+              margin-left: 8px;
+            }
+          }
+
+          button {
+            width: 122px;
+            height: 54px;
+          }
+        }
+      }
+    }
+  }
+
+  .hero {
+    .hero-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0 61px;
+
+      .content {
+        .slogan {
+          background: rgba(255, 255, 255, 0.35);
+          border-radius: 49px;
+          padding: 7px 4.32px 11px;
+          width: 361px;
+          height: 42px;
+          text-align: center;
+
+          p {
+            font-family: "Open Sans";
+            font-weight: 600;
+            font-size: 2.2rem;
+            line-height: 109%;
+            color: var(--black-color);
+          }
+        }
+
+        .title {
+          margin-top: 25px;
+          font-weight: 700;
+          font-size: 4.8rem;
+          line-height: 50px;
+        }
+
+        .desc {
+          font-family: "Open Sans";
+          font-weight: 600;
+          font-size: 2rem;
+          line-height: 24px;
+          margin-top: 35px;
+        }
+
+        .download {
+          margin-top: 40px;
+          display: flex;
+          gap: 0 18.21px;
+        }
+      }
+
+      .image {
+        margin-right: -17px;
+      }
+    }
+  }
+}

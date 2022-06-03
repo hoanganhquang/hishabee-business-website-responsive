@@ -22,39 +22,47 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="container">
-          <div class="header-container">
-            <img src="./assets/images/logo.png" alt="" class="logo" />
+        <div class="navbar">
+          <div class="container">
+            <div class="navbar-container">
+              <img src="./assets/images/logo.png" alt="" class="logo" />
 
-            <ul class="nav">
-              <li class="item active">Home</li>
-              <li class="item">About</li>
-              <li class="item">Features</li>
-              <li class="item">Blog</li>
-              <li class="item">Pricing</li>
-              <li class="item">Contact</li>
-            </ul>
+              <div class="features">
+                <ul class="nav">
+                  <li class="item active"><a href="#Home">Home</a></li>
+                  <li class="item"><a href="#About">About</a></li>
+                  <li class="item"><a href="#Features">Features</a></li>
+                  <li class="item"><a href="#Blog">Blog</a></li>
+                  <li class="item"><a href="#Pricing">Pricing</a></li>
+                  <li class="item"><a href="#Contact">Contact</a></li>
+                </ul>
 
-            <div class="action">
-              <div class="languages">
-                <img src="./assets/icons/nav-flag.svg" alt="" class="flag" />
-                <p class="name">English</p>
-                <span class="dropdown-arrow"
-                  ><i class="fa-solid fa-angle-down"></i
-                ></span>
+                <div class="action">
+                  <div class="languages">
+                    <img
+                      src="./assets/icons/nav-flag.svg"
+                      alt=""
+                      class="flag"
+                    />
+                    <p class="name">English</p>
+                    <span class="dropdown-arrow"
+                      ><i class="fa-solid fa-angle-down"></i
+                    ></span>
+                  </div>
+
+                  <button class="primary-btn">Download</button>
+                </div>
               </div>
-
-              <button class="primary-btn">Download</button>
             </div>
           </div>
         </div>
-      </header>
-      <main>
         <section class="hero">
           <div class="container">
             <div class="hero-container">
               <div class="content">
-                <div class="slogan"><p>All-in-one Business Manager 🔥</p></div>
+                <div class="slogan">
+                  <p>All-in-one Business Manager 🔥</p>
+                </div>
 
                 <h1 class="content-title title">
                   Easily keep track of all your sales, income and inventory
@@ -80,7 +88,8 @@
             </div>
           </div>
         </section>
-
+      </header>
+      <main>
         <section class="about">
           <div class="container">
             <div class="about-container">
@@ -434,9 +443,33 @@
               <p class="section-desc desc">Hishabee Technologies Limited</p>
               <p class="info-number">Contact: +8809638011199</p>
             </div>
-            <div class="links"></div>
+            <div class="links">
+              <h3 class="section-title">Useful Links</h3>
+              <ul class="list">
+                <li>Privacy Policy</li>
+                <li>Terms of Use</li>
+                <li>Tutorials</li>
+                <li>Feedback & Sugesstion</li>
+                <li>Contact Us</li>
+                <li>Blog</li>
+                <li>Newsletter</li>
+                <li>Help Centre</li>
+              </ul>
+            </div>
+            <div class="action">
+              <h3 class="section-title">Newsletter</h3>
+              <div class="subcribe">
+                <input type="email" />
+                <button class="primary-btn">Subscribe</button>
+              </div>
+            </div>
           </div>
         </div>
+        <hr />
+        <p class="copyright">
+          © 2022 Hishabee Business Manager. All Rights Reserved. Hishabee
+          Technologies Limited
+        </p>
       </footer>
     </div>
   </body>
