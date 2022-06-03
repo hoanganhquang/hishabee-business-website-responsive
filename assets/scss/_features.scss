@@ -1,4 +1,6 @@
 .features {
+  padding-top: 150px;
+
   .features-container {
     .header {
       text-align: center;
@@ -79,6 +81,10 @@
           .feature-content {
             text-align: right;
           }
+        }
+
+        &:last-child {
+          margin-bottom: 0;
         }
       }
     }

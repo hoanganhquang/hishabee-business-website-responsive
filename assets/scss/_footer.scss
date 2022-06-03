@@ -1,0 +1,97 @@
+.footer {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(248, 248, 248, 0) 0%,
+    #f8f8f8 100%
+  );
+  padding-top: 88px;
+  padding-bottom: 67px;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      font-family: "Lato";
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 156%;
+      color: var(--title-section-color);
+    }
+
+    .info {
+      .desc {
+        margin: 9px 0 5px;
+        font-size: 1.8rem;
+        line-height: 156%;
+      }
+
+      .info-number {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 156%;
+        color: var(--black-color);
+      }
+    }
+
+    .links {
+      .title {
+        margin-bottom: 21px;
+      }
+
+      .list {
+        height: 223px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 16px 33px;
+
+        li {
+          a {
+            font-family: "Open Sans";
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 150%;
+            color: var(--text-desc-color2);
+          }
+        }
+      }
+    }
+
+    .action {
+      .title {
+        font-weight: 800;
+        margin-bottom: 21px;
+      }
+
+      .subcribe {
+        input {
+          width: 226px;
+          height: 46px;
+          margin-right: 16px;
+        }
+
+        button {
+          width: 117px;
+          height: 48px;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+
+  hr {
+    margin-top: 48px;
+  }
+
+  .copyright {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 143%;
+    color: #8896ab;
+    margin-top: 40px;
+    text-align: center;
+  }
+}

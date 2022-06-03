@@ -22,14 +22,14 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="navbar">
+        <div class="navbar" id="navbar">
           <div class="container">
             <div class="navbar-container">
               <img src="./assets/images/logo.png" alt="" class="logo" />
 
               <div class="header-features">
                 <ul class="nav">
-                  <li class="item active"><a href="#Home">Home</a></li>
+                  <li class="item active"><a href="#">Home</a></li>
                   <li class="item"><a href="#About">About</a></li>
                   <li class="item"><a href="#Features">Features</a></li>
                   <li class="item"><a href="#Blog">Blog</a></li>
@@ -90,7 +90,7 @@
         </section>
       </header>
       <main>
-        <section class="about">
+        <section class="about" id="About">
           <div class="container">
             <div class="about-container">
               <div class="header">
@@ -160,7 +160,7 @@
           </div>
         </section>
 
-        <section class="features">
+        <section class="features" id="Features">
           <div class="container">
             <div class="features-container">
               <div class="header">
@@ -264,7 +264,7 @@
           </div>
         </section>
 
-        <section class="pricing">
+        <section class="pricing" id="Pricing">
           <div class="container">
             <div class="pricing-container">
               <div class="header">
@@ -425,7 +425,7 @@
           </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="Contact">
           <div class="content">
             <h2 class="section-title title">Got any Question?</h1>
             <p class="section-desc desc">
@@ -433,7 +433,7 @@
             </p>
 
             <div class="action">
-              <input type="email" placeholder="Enter your email" />
+              <input class="input" type="email" placeholder="Enter your email" />
               <button class="primary-btn">Contact us</button>
             </div>
           </div>
@@ -445,29 +445,29 @@
       </main>
       <footer class="footer">
         <div class="container">
-          <div class="footer-content">
+          <div class="footer-container">
             <div class="info">
               <img src="./assets/images/logo.png" alt="" />
               <p class="section-desc desc">Hishabee Technologies Limited</p>
               <p class="info-number">Contact: +8809638011199</p>
             </div>
             <div class="links">
-              <h3 class="section-title">Useful Links</h3>
+              <h3 class="section-title title">Useful Links</h3>
               <ul class="list">
-                <li>Privacy Policy</li>
-                <li>Terms of Use</li>
-                <li>Tutorials</li>
-                <li>Feedback & Sugesstion</li>
-                <li>Contact Us</li>
-                <li>Blog</li>
-                <li>Newsletter</li>
-                <li>Help Centre</li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Feedback & Sugesstion</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Help Centre</a></li>
               </ul>
             </div>
             <div class="action">
-              <h3 class="section-title">Newsletter</h3>
+              <h3 class="section-title title">Newsletter</h3>
               <div class="subcribe">
-                <input type="email" />
+                <input type="email" class="input"/>
                 <button class="primary-btn">Subscribe</button>
               </div>
             </div>
@@ -480,5 +480,7 @@
         </p>
       </footer>
     </div>
+
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>

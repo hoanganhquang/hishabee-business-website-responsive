@@ -44,6 +44,10 @@ ul {
   --text-button-color: #f0fdf4;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -104,6 +108,18 @@ h1.section-title.title::after {
   bottom: 5px;
   left: 0;
   z-index: -1;
+}
+
+.input {
+  border: 1px solid #d5dae1;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--text-desc-color);
 }
 
 header {
@@ -218,7 +234,7 @@ header .hero .hero-container .image {
 }
 
 .about {
-  padding-top: 80px;
+  padding-top: 150px;
   padding-bottom: 74px;
 }
 .about .about-container .header {
@@ -278,6 +294,9 @@ header .hero .hero-container .image {
   transform: translateX(-50%);
 }
 
+.features {
+  padding-top: 150px;
+}
 .features .features-container .header {
   text-align: center;
   display: flex;
@@ -343,7 +362,13 @@ header .hero .hero-container .image {
 .features .features-container .content .feature--reverse .feature-content {
   text-align: right;
 }
+.features .features-container .content .feature:last-child {
+  margin-bottom: 0;
+}
 
+.pricing {
+  padding-top: 150px;
+}
 .pricing .pricing-container .header {
   display: flex;
   flex-direction: column;
@@ -473,16 +498,7 @@ header .hero .hero-container .image {
 .contact .content .action input {
   width: 320px;
   height: 46px;
-  border: 1px solid #d5dae1;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-  border-radius: 8px;
-  padding: 10px 14px;
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 150%;
   margin-right: 24px;
-  color: var(--text-desc-color);
 }
 .contact .content .action button {
   width: 112px;
@@ -507,6 +523,78 @@ header .hero .hero-container .image {
 .contact img:nth-child(4) {
   top: 24px;
   right: 24px;
+}
+
+.footer {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(248, 248, 248, 0) 0%, #f8f8f8 100%);
+  padding-top: 88px;
+  padding-bottom: 67px;
+}
+.footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-container .title {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 156%;
+  color: var(--title-section-color);
+}
+.footer .footer-container .info .desc {
+  margin: 9px 0 5px;
+  font-size: 1.8rem;
+  line-height: 156%;
+}
+.footer .footer-container .info .info-number {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 156%;
+  color: var(--black-color);
+}
+.footer .footer-container .links .title {
+  margin-bottom: 21px;
+}
+.footer .footer-container .links .list {
+  height: 223px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px 33px;
+}
+.footer .footer-container .links .list li a {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--text-desc-color2);
+}
+.footer .footer-container .action .title {
+  font-weight: 800;
+  margin-bottom: 21px;
+}
+.footer .footer-container .action .subcribe input {
+  width: 226px;
+  height: 46px;
+  margin-right: 16px;
+}
+.footer .footer-container .action .subcribe button {
+  width: 117px;
+  height: 48px;
+  border-radius: 6px;
+}
+.footer hr {
+  margin-top: 48px;
+}
+.footer .copyright {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 143%;
+  color: #8896ab;
+  margin-top: 40px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */
