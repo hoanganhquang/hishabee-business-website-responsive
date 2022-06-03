@@ -11,6 +11,7 @@ header {
     right: 0;
     left: 0;
     background-color: var(--white-color);
+    z-index: 999;
 
     .navbar-container {
       height: var(--navbar-height);
@@ -18,7 +19,7 @@ header {
       align-items: center;
       justify-content: space-between;
 
-      .features {
+      .header-features {
         display: flex;
         align-items: center;
         gap: 0 37.04px;

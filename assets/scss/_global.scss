@@ -59,3 +59,18 @@
   line-height: 112%;
   color: var(--white-color);
 }
+
+h1.section-title.title {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 206, 64, 0.5);
+    width: 589px;
+    height: 9px;
+    bottom: 5px;
+    left: 0;
+    z-index: -1;
+  }
+}

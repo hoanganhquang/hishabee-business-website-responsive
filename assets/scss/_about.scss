@@ -1,0 +1,73 @@
+.about {
+  padding-top: 80px;
+  padding-bottom: 74px;
+
+  .about-container {
+    .header {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px 0;
+      margin-bottom: 60px;
+
+      .desc {
+        color: var(--text-desc-color);
+      }
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+
+      .items-box {
+        .item {
+          box-shadow: 0px 4px 34px rgba(27, 28, 31, 0.1);
+          border-radius: 20px;
+          width: 359px;
+          height: 272px;
+          padding: 32px;
+          text-align: center;
+          margin-bottom: 24px;
+
+          .img-box {
+            margin: 0 auto;
+            width: 64px;
+            height: 64px;
+            background-color: var(--primary-color2);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .title {
+            margin: 24px 0 16px;
+            font-size: 2.4rem;
+            line-height: 133%;
+          }
+
+          .desc {
+            font-family: "Open Sans";
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 150%;
+          }
+        }
+      }
+
+      .center-image {
+        margin-top: -50px;
+      }
+    }
+
+    button {
+      width: 133px;
+      height: 56px;
+      margin-top: 60px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

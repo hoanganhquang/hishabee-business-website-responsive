@@ -92,6 +92,20 @@ ul {
   color: var(--white-color);
 }
 
+h1.section-title.title {
+  position: relative;
+}
+h1.section-title.title::after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 206, 64, 0.5);
+  width: 589px;
+  height: 9px;
+  bottom: 5px;
+  left: 0;
+  z-index: -1;
+}
+
 header {
   --navbar-height: 118px;
   background-image: url("/assets/icons/hero-bg.svg");
@@ -104,6 +118,7 @@ header .navbar {
   right: 0;
   left: 0;
   background-color: var(--white-color);
+  z-index: 999;
 }
 header .navbar .navbar-container {
   height: var(--navbar-height);
@@ -111,16 +126,16 @@ header .navbar .navbar-container {
   align-items: center;
   justify-content: space-between;
 }
-header .navbar .navbar-container .features {
+header .navbar .navbar-container .header-features {
   display: flex;
   align-items: center;
   gap: 0 37.04px;
 }
-header .navbar .navbar-container .features .nav {
+header .navbar .navbar-container .header-features .nav {
   display: flex;
   gap: 0 30px;
 }
-header .navbar .navbar-container .features .nav .item a {
+header .navbar .navbar-container .header-features .nav .item a {
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 1.8rem;
@@ -128,15 +143,15 @@ header .navbar .navbar-container .features .nav .item a {
   color: var(--black-color);
   cursor: pointer;
 }
-header .navbar .navbar-container .features .nav .item.active a {
+header .navbar .navbar-container .header-features .nav .item.active a {
   color: var(--primary-color);
   font-weight: 700;
 }
-header .navbar .navbar-container .features .action {
+header .navbar .navbar-container .header-features .action {
   display: flex;
   gap: 0 16px;
 }
-header .navbar .navbar-container .features .action .languages {
+header .navbar .navbar-container .header-features .action .languages {
   display: flex;
   align-items: center;
   border: 1px solid #eff0f7;
@@ -146,7 +161,7 @@ header .navbar .navbar-container .features .action .languages {
   height: 54px;
   padding: 9px 16px 9px 9px;
 }
-header .navbar .navbar-container .features .action .languages .name {
+header .navbar .navbar-container .header-features .action .languages .name {
   font-family: "Lato";
   font-weight: 500;
   font-size: 1.8rem;
@@ -155,7 +170,7 @@ header .navbar .navbar-container .features .action .languages .name {
   margin-right: 28px;
   margin-left: 8px;
 }
-header .navbar .navbar-container .features .action button {
+header .navbar .navbar-container .header-features .action button {
   width: 122px;
   height: 54px;
 }
@@ -200,6 +215,67 @@ header .hero .hero-container .content .download {
 }
 header .hero .hero-container .image {
   margin-right: -17px;
+}
+
+.about {
+  padding-top: 80px;
+  padding-bottom: 74px;
+}
+.about .about-container .header {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px 0;
+  margin-bottom: 60px;
+}
+.about .about-container .header .desc {
+  color: var(--text-desc-color);
+}
+.about .about-container .content {
+  display: flex;
+  justify-content: space-between;
+}
+.about .about-container .content .items-box .item {
+  box-shadow: 0px 4px 34px rgba(27, 28, 31, 0.1);
+  border-radius: 20px;
+  width: 359px;
+  height: 272px;
+  padding: 32px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.about .about-container .content .items-box .item .img-box {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background-color: var(--primary-color2);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .about-container .content .items-box .item .title {
+  margin: 24px 0 16px;
+  font-size: 2.4rem;
+  line-height: 133%;
+}
+.about .about-container .content .items-box .item .desc {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+.about .about-container .content .center-image {
+  margin-top: -50px;
+}
+.about .about-container button {
+  width: 133px;
+  height: 56px;
+  margin-top: 60px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=index.css.map */
