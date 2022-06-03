@@ -570,6 +570,9 @@ header .hero .hero-container .image {
   line-height: 150%;
   color: var(--text-desc-color2);
 }
+.footer .footer-container .action {
+  margin-left: 94px;
+}
 .footer .footer-container .action .title {
   font-weight: 800;
   margin-bottom: 21px;
