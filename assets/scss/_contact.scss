@@ -59,3 +59,23 @@
     }
   }
 }
+
+@media screen and (max-width: 31.125em) {
+  .contact {
+    .content {
+      .action {
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+
+        input {
+          width: 100%;
+        }
+
+        button {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}

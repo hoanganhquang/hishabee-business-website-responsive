@@ -557,6 +557,8 @@ header .hero .hero-container .image {
 .pricing .pricing-container .content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0 5px;
 }
 .pricing .pricing-container .content .pricing-table {
   width: 359px;
@@ -646,6 +648,12 @@ header .hero .hero-container .image {
   border-radius: 6px;
 }
 
+@media screen and (max-width: 70.8125em) {
+  .pricing .container .pricing-container .content {
+    justify-content: center;
+    gap: 40px;
+  }
+}
 .contact {
   margin-top: 88px;
   background: linear-gradient(291.38deg, var(--primary-color1) 31.57%, var(--primary-color1) 106.52%);
@@ -696,6 +704,19 @@ header .hero .hero-container .image {
   right: 24px;
 }
 
+@media screen and (max-width: 31.125em) {
+  .contact .content .action {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  .contact .content .action input {
+    width: 100%;
+  }
+  .contact .content .action button {
+    align-self: flex-end;
+  }
+}
 .footer {
   background: radial-gradient(50% 50% at 50% 50%, rgba(248, 248, 248, 0) 0%, #f8f8f8 100%);
   padding-top: 88px;
@@ -769,6 +790,30 @@ header .hero .hero-container .image {
   color: #8896ab;
   margin-top: 40px;
   text-align: center;
+}
+
+@media screen and (max-width: 65.375em) {
+  .footer .container .footer-container {
+    flex-wrap: wrap;
+    gap: 50px 100px;
+    justify-content: start;
+    padding-left: 10%;
+  }
+  .footer .container .footer-container .links {
+    order: 3;
+  }
+  .footer .container .footer-container .action {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 54.5em) {
+  .footer .container .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer .container .footer-container .action .subcribe input {
+    margin-bottom: 15px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

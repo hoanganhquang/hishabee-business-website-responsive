@@ -97,3 +97,43 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 65.375em) {
+  .footer {
+    .container {
+      .footer-container {
+        flex-wrap: wrap;
+        gap: 50px 100px;
+        justify-content: start;
+        padding-left: 10%;
+
+        .links {
+          order: 3;
+        }
+
+        .action {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 54.5em) {
+  .footer {
+    .container {
+      .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .action {
+          .subcribe {
+            input {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
