@@ -25,6 +25,14 @@ header {
         align-items: center;
         gap: 0 37.04px;
 
+        .menu-btn {
+          display: none;
+        }
+
+        .menu-responsive {
+          display: none;
+        }
+
         .nav {
           display: flex;
           gap: 0 30px;
@@ -131,6 +139,95 @@ header {
 
       .image {
         margin-right: -17px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 68.75em) {
+  .header {
+    .navbar {
+      .navbar-container {
+        .header-features {
+          .menu-btn {
+            display: block;
+            font-size: 2.6rem;
+            cursor: pointer;
+
+            &:hover {
+              color: var(--primary-color);
+            }
+          }
+
+          .menu-responsive {
+            transform: translateX(110%);
+            display: block;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            background: var(--white-color);
+            width: 250px;
+            z-index: 1000;
+            box-shadow: 0 0 10px var(--black-color);
+            transition: transform 0.5s;
+
+            .nav {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 30px 0;
+              padding-top: 50px;
+            }
+
+            .action {
+              display: none;
+            }
+
+            &.show {
+              transform: translateX(0);
+            }
+          }
+
+          .nav {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 43.75em) {
+  .header {
+    .navbar {
+      .navbar-container {
+        .header-features {
+          .menu-btn {
+            display: block;
+            font-size: 2.6rem;
+            cursor: pointer;
+            margin-right: 20px;
+
+            &:hover {
+              color: var(--primary-color);
+            }
+          }
+
+          .menu-responsive {
+            .action {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 20px 0;
+              margin-top: 30px;
+            }
+          }
+
+          .action {
+            display: none;
+          }
+        }
       }
     }
   }
