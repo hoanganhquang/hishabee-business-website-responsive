@@ -101,10 +101,11 @@ header {
         .slogan {
           background: rgba(255, 255, 255, 0.35);
           border-radius: 49px;
-          padding: 7px 4.32px 11px;
           width: 361px;
           height: 42px;
-          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
           p {
             font-family: "Open Sans";
@@ -195,6 +196,54 @@ header {
         }
       }
     }
+
+    .hero {
+      .hero-container {
+        .image {
+          img {
+            width: 450px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 56.625em) {
+  .header {
+    .hero {
+      .hero-container {
+        .image {
+          img {
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 50.5em) {
+  .header {
+    .hero {
+      .hero-container {
+        flex-direction: column;
+        gap: 50px 0;
+
+        .content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .image {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -226,6 +275,39 @@ header {
 
           .action {
             display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 31.125em) {
+  html {
+    font-size: 47%;
+  }
+
+  .header {
+    .hero {
+      .hero-container {
+        .content {
+          .slogan {
+            width: 285px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 24.375em) {
+  .header {
+    .hero {
+      .hero-container {
+        .content {
+          .download {
+            flex-direction: column;
+            gap: 20px 0;
           }
         }
       }
