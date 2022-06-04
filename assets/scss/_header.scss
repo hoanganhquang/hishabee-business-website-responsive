@@ -45,6 +45,7 @@ header {
               line-height: 111%;
               color: var(--black-color);
               cursor: pointer;
+              transition: color 0.1s;
             }
 
             &.active {

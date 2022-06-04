@@ -11,13 +11,13 @@ document.addEventListener("scroll", () => {
   }
 });
 
-navitem.forEach((item) => {
-  item.addEventListener("click", () => {
-    const curActive = document.getElementsByClassName("active");
-    curActive[0].classList.remove("active");
-    item.classList.add("active");
-  });
-});
+// navitem.forEach((item) => {
+//   item.addEventListener("click", () => {
+//     const curActive = document.getElementsByClassName("active");
+//     curActive[0].classList.remove("active");
+//     item.classList.add("active");
+//   });
+// });
 
 menuBtn.addEventListener("click", () => {
   menuRes.classList.toggle("show");
@@ -31,4 +31,31 @@ document.addEventListener("click", (e) => {
   ) {
     menuRes.classList.remove("show");
   }
+});
+
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  let currentSection = "";
+
+  sections.forEach((section) => {
+    const sectionOffset = section.offsetTop;
+
+    if (window.scrollY >= sectionOffset - 200) {
+      currentSection = section.getAttribute("id");
+    }
+  });
+
+  console.log(currentSection);
+
+  navitem.forEach((item) => {
+    item.classList.remove("active");
+    if (
+      currentSection != null &&
+      currentSection != "" &&
+      item.children[0].getAttribute("href").includes(currentSection)
+    ) {
+      item.classList.add("active");
+    }
+  });
 });
