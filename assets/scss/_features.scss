@@ -3,18 +3,8 @@
 
   .features-container {
     .header {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       gap: 17px 0;
       margin-bottom: 130px;
-
-      .title {
-        &::after {
-          width: 541px;
-        }
-      }
 
       .desc {
         color: var(--text-desc-color1);

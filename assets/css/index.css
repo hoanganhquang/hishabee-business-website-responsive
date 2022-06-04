@@ -103,7 +103,7 @@ h1.section-title.title::after {
   content: "";
   position: absolute;
   background: rgba(255, 206, 64, 0.5);
-  width: 589px;
+  width: 100%;
   height: 9px;
   bottom: 5px;
   left: 0;
@@ -122,6 +122,23 @@ h1.section-title.title::after {
   color: var(--text-desc-color);
 }
 
+.container .header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 40.125em) {
+  h1.section-title.title::after {
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 5px;
+    bottom: -10px;
+  }
+}
 header {
   --navbar-height: 118px;
   background-image: url("/assets/icons/hero-bg.svg");
@@ -343,11 +360,6 @@ header .hero .hero-container .image {
   padding-bottom: 74px;
 }
 .about .about-container .header {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 18px 0;
   margin-bottom: 60px;
 }
@@ -388,7 +400,15 @@ header .hero .hero-container .image {
   font-size: 1.6rem;
   line-height: 150%;
 }
-.about .about-container .content .center-image {
+.about .about-container .content .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  max-width: 367px;
+}
+.about .about-container .content .img-container .center-image {
+  width: 100%;
   margin-top: -50px;
 }
 .about .about-container button {
@@ -399,19 +419,35 @@ header .hero .hero-container .image {
   transform: translateX(-50%);
 }
 
+@media screen and (max-width: 69.9375em) {
+  .about .about-container .content .items-box .item {
+    width: 308px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 60.125em) {
+  .about .about-container .content {
+    flex-wrap: wrap;
+    gap: 30px 30px;
+    justify-content: center;
+  }
+  .about .about-container .content .img-container {
+    order: 3;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 31.125em) {
+  .about .about-container .content .items-box .item {
+    width: 280px;
+    height: 240px;
+  }
+}
 .features {
   padding-top: 150px;
 }
 .features .features-container .header {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 17px 0;
   margin-bottom: 130px;
-}
-.features .features-container .header .title::after {
-  width: 541px;
 }
 .features .features-container .header .desc {
   color: var(--text-desc-color1);
@@ -475,14 +511,8 @@ header .hero .hero-container .image {
   padding-top: 150px;
 }
 .pricing .pricing-container .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 20px 0;
   margin-bottom: 35px;
-}
-.pricing .pricing-container .header .title::after {
-  width: 580px;
 }
 .pricing .pricing-container .header .desc {
   line-height: 150%;
